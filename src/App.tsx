@@ -38,7 +38,7 @@ function App() {
             ))}
           </ul>
         </nav>
-        <a className="btn btn-primary header-cta" href={resume.resumeFile} download>
+        <a className="btn btn-primary header-cta" href={resume.resumeDownloadUrl} download>
           Download CV
         </a>
       </header>
@@ -54,7 +54,7 @@ function App() {
             <p className="tagline">{resume.stack.join(' · ')}</p>
             <p className="location">{resume.location}</p>
             <div className="hero-actions">
-              <a className="btn btn-primary" href={resume.resumeFile} download>
+              <a className="btn btn-primary" href={resume.resumeDownloadUrl} download>
                 Download resume (PDF)
               </a>
               <a className="btn btn-ghost" href="#contact">

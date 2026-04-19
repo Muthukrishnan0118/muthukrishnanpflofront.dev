@@ -1,3 +1,7 @@
+/** Live site (Vercel); used for portfolio link and absolute resume PDF URLs. */
+const SITE_ORIGIN = 'https://muthukrishnanfrontdev.vercel.app'
+const RESUME_PDF_PATH = '/MUTHUKRISHNAN.T_Frontend(resume)%20(2).pdf'
+
 export const resume = {
   name: 'MUTHUKRISHNAN.T',
   role: 'Frontend Developer',
@@ -58,7 +62,7 @@ export const resume = {
       name: 'Personal portfolio',
       description:
         'Responsive portfolio built with React and TypeScript (Vite), showcasing experience, skills, and a downloadable resume. Live on Vercel.',
-      liveUrl: 'https://muthukrishnanfddev.vercel.app/',
+      liveUrl: `${SITE_ORIGIN}/`,
       tags: ['React', 'TypeScript', 'Vite'],
     },
     {
@@ -69,5 +73,8 @@ export const resume = {
       tags: ['React', 'JavaScript', 'Vercel'],
     },
   ],
-  resumeFile: '/MUTHUKRISHNAN.T_Frontend(resume)%20(2).pdf',
+  /** Relative path (local dev / same-origin). */
+  resumeFile: RESUME_PDF_PATH,
+  /** Full URL for Download CV / Download resume — points at deployed PDF on Vercel. */
+  resumeDownloadUrl: `${SITE_ORIGIN}${RESUME_PDF_PATH}`,
 } as const
