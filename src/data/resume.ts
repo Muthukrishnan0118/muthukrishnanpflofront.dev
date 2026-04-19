@@ -1,6 +1,6 @@
 /** Live site (Vercel); used for portfolio link and absolute resume PDF URLs. */
 const SITE_ORIGIN = 'https://muthukrishnanfrontdev.vercel.app'
-const RESUME_PDF_PATH = '/MUTHUKRISHNAN.T_Frontend(resume)%20(2).pdf'
+const RESUME_PDF_PATH = './MUTHUKRISHNAN.T_FlowCV_Resume_2026-04-19.pdf'
 
 export const resume = {
   name: 'MUTHUKRISHNAN.T',
