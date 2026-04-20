@@ -38,9 +38,22 @@ function App() {
             ))}
           </ul>
         </nav>
-        <a className="btn btn-primary header-cta" href={resume.resumeDownloadUrl} download>
-          Download CV
-        </a>
+        <div className="header-cta-group">
+          <a 
+            className="btn btn-ghost header-cta" 
+            href={resume.cvDownloadUrl} 
+            download="MUTHUKRISHNAN.T_CV.pdf"
+          >
+            Download CV
+          </a>
+          <a 
+            className="btn btn-primary header-cta" 
+            href={resume.resumeDownloadUrl} 
+            download="MUTHUKRISHNAN.T_Resume.pdf"
+          >
+            Download Resume
+          </a>
+        </div>
       </header>
 
       <main id="top">
@@ -54,8 +67,19 @@ function App() {
             <p className="tagline">{resume.stack.join(' · ')}</p>
             <p className="location">{resume.location}</p>
             <div className="hero-actions">
-              <a className="btn btn-primary" href={resume.resumeDownloadUrl} download>
-                Download resume (PDF)
+              <a 
+                className="btn btn-primary" 
+                href={resume.cvDownloadUrl} 
+                download="MUTHUKRISHNAN.T_CV.pdf"
+              >
+                Download CV
+              </a>
+              <a 
+                className="btn btn-primary" 
+                href={resume.resumeDownloadUrl} 
+                download="MUTHUKRISHNAN.T_Resume.pdf"
+              >
+                Download Resume
               </a>
               <a className="btn btn-ghost" href="#contact">
                 Get in touch
